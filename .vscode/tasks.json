@@ -1,0 +1,45 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceRoot}"
+    },
+    "presentation": {
+        "reveal":"always",
+        "panel": "shared",
+        "showReuseMessage": false
+    },
+    "tasks": [
+        {
+            "label": "Reconfigure",
+            "type": "shell",
+            "command": "c:\\python27-x64\\python.exe ${env:IDF_PATH}\\tools\\idf.py reconfigure",
+            "problemMatcher": []
+        },
+        {
+            "label": "Config",
+            "type": "shell",
+            "command": "idf.py menuconfig",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "c:\\python27-x64\\python.exe ${env:IDF_PATH}\\tools\\idf.py build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash",
+            "type": "shell",
+            "command": "c:\\python27-x64\\python.exe ${env:IDF_PATH}\\tools\\idf.py flash",
+            "problemMatcher": []
+        },
+        {
+            "label": "Monitor",
+            "type": "shell",
+            "command": "idf.py monitor",
+            "problemMatcher": []
+        }
+    ]
+}

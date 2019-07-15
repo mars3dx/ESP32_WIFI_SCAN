@@ -1,0 +1,11 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "gpio.h": "c",
+        "tcpip_adapter.h": "c",
+        "sdkconfig.h": "c",
+        "list": "cpp",
+        "vector": "cpp",
+        "string": "cpp"
+    }
+}
